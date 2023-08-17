@@ -1,1 +1,1 @@
-# perceptron_cpp
+# Перцептрон на C++
