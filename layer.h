@@ -20,7 +20,6 @@ public:
     Matrix bias;
     Matrix input;
     Matrix t;   // t = input * weights + bias
-    Matrix h;   // h = F(t)
 };
 
 #endif // LAYER_H

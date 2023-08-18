@@ -109,9 +109,8 @@ Matrix Perceptron::predict(const Matrix& x){
             for (size_t j = 0; j < layers[i].t.get_columns(); ++j)
                 layers[i].t[k][j] += layers[i].bias[0][j];
 
-        layers[i].h = relu(layers[i].t);
         if (i + 1 != layers.size())
-            layers[i + 1].input = layers[i].h;
+            layers[i + 1].input = relu(layers[i].t);
     }
     Matrix z = softmax_batch(layers.back().t);
     return z;

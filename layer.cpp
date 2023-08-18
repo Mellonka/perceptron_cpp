@@ -7,8 +7,7 @@ Layer::Layer(size_t input_dim, size_t dim)
       weights(input_dim, dim),
       bias(1, dim),
       input(1, input_dim),
-      t(1, dim),
-      h(1, dim) {
+      t(1, dim) {
 
     srand(time(NULL));
 
